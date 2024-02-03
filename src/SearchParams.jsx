@@ -3,8 +3,7 @@ import useBreedList from "./useBreedList.jsx";
 
 import Results from "./Results.jsx";
 
-const ANIMALS = ["","bird", "cat", "dog", "rabbit", "reptile"];
-
+const ANIMALS = ["", "bird", "cat", "dog", "rabbit", "reptile"];
 
 const SearchParams = () => {
   const [location, setLocation] = useState("");
@@ -12,7 +11,7 @@ const SearchParams = () => {
   const [breed, setBreed] = useState("");
   const [pets, setPets] = useState([]);
   // replace `const breeds = [];`
-const [breeds] = useBreedList(animal);
+  const [breeds] = useBreedList(animal);
 
   useEffect(() => {
     requestPets();
