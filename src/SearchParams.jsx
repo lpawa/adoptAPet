@@ -12,8 +12,8 @@ const SearchParams = () => {
   const [requestParams, setRequestParams] = useState({
     animal: "",
     breed: "",
-    location: ""
-  })
+    location: "",
+  });
   const [animal, setAnimal] = useState("");
   const [breeds] = useBreedList(animal);
 
@@ -30,8 +30,8 @@ const SearchParams = () => {
             animal: formData.get("animal") ?? "",
             breed: formData.get("breed") ?? "",
             location: formData.get("location") ?? "",
-          }
-          setRequestParams(obj)
+          };
+          setRequestParams(obj);
         }}
       >
         <label htmlFor="location">
